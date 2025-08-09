@@ -1,71 +1,84 @@
-# cay-molasi-hatirlatici README
+# 🫖 Çay Molası Hatırlatıcısı
 
-This is the README for your extension "cay-molasi-hatirlatici". After writing up a brief description, we recommend including the following sections.
+**Türk geliştirici kültürüne özel VS Code extension'ı!**
 
-## Features
+Uzun kodlama seansları sırasında çay molası vermeyi unutuyorsun? Bu extension tam sana göre! Belirli aralıklarla sevimli Türkçe mesajlarla çay molası hatırlatır ve sağlıklı kodlama alışkanlıkları geliştirmene yardımcı olur.Türk kültürü ve benim önemli bir parçası olan çaya gereken değerin bir gün verilmesi dileğiyle :)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## ✨ Özellikler
 
-For example if there is an image subfolder under your extension project workspace:
+- 🕐 **Özelleştirilebilir Süre**: 5-120 dakika arası çay molası aralıkları
+- 🎯 **Akıllı Hatırlatıcı**: Kodlama yaparken nazikçe hatırlatır
+- 📊 **Status Bar Entegrasyonu**: Geri sayım ve durum göstergesi
+- 🎭 **Eğlenceli Türkçe Mesajlar**: "Çay demlenme süresi geldi!", gibi
+- ⚙️ **Kolay Ayarlar**: Mesajları ve süreyi kolayca özelleştir
+- 🎮 **Esnek Kontrol**: Başlat, durdur, ertelemek istediğin gibi
 
-\!\[feature X\]\(images/feature-x.png\)
+## 🚀 Kurulum
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### VS Code Marketplace'den (Yakında)
+1. VS Code Extensions paneline git (`Ctrl+Shift+X`)
+2. "Çay Molası Hatırlatıcısı" ara
+3. Install'a tıkla
 
-## Requirements
+### Manual Kurulum (.vsix dosyası ile)
+1. Bu repository'den `.vsix` dosyasını indir
+2. VS Code Extensions paneli → `...` menü → `Install from VSIX...`
+3. İndirdiğin `.vsix` dosyasını seç
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## 📖 Kullanım
 
-## Extension Settings
+### Hızlı Başlangıç
+1. `Ctrl+Shift+P` ile Command Palette'i aç
+2. "Çay Molası Başlat" yazıp Enter'a bas
+3. Status bar'da geri sayımı izle
+4. Çay molası zamanı geldiğinde bildirim alacaksın!
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Komutlar
+- **Çay Molası Başlat**: Timer'ı başlatır (varsayılan: 25 dakika)
+- **Çay Molası Durdur**: Aktif timer'ı durdurur
+- **Çay Molası Ayarları**: Hızlı ayarlar menüsünü açar
 
-For example:
+### Status Bar
+Sağ alt köşede çay fincanı ikonu (🫖) ile:
+- Kalan süreyi gösterir
+- Tıklayarak ayarlara erişebilirsin
+- Çay zamanı geldiğinde parlak renkte uyarır
 
-This extension contributes the following settings:
+## ⚙️ Ayarlar
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+### VS Code Settings ile
+`File > Preferences > Settings` → "çay molası" ara
 
-## Known Issues
+**Mevcut Ayarlar:**
+- `cayMolasi.sure`: Hatırlatma süresi (dakika, varsayılan: 25)
+- `cayMolasi.mesajlar`: Özel hatırlatma mesajları listesi
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
+## 🎭 Varsayılan Mesajlar
 
-Users appreciate release notes as you update your extension.
+Extension şu eğlenceli mesajlarla hatırlatır:
+- "Çay demlenme süresi geldi! ☕"
+- "Çayını al, kodu bırak! ✨"
+- "Bi çay içsek ne olur ki? 😄"
 
-### 1.0.0
+## 🔧 Geliştirme
 
-Initial release of ...
+### Gereksinimler
+- Node.js 14+
+- VS Code 1.74.0+
+- TypeScript
 
-### 1.0.1
 
-Fixed issue #.
+### Build
+```bash
+npm run package
+```
 
-### 1.1.0
 
-Added features X, Y, and Z.
+## 🙏 Teşekkürler
+
+Bu extension, Türkiye'deki geliştirici kültürü ve benim çay sevgisimden ilham alınarak yapılmıştır. Sağlıklı kodlama alışkanlıkları geliştirmek ve çay molası kültürünü dijitalleştirmek amacıyla oluşturuldu.
+
+**İyi çaylar, iyi kodlar! 🫖💻**
 
 ---
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

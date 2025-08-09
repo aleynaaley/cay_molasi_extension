@@ -43,10 +43,14 @@
           "type": "array",
           "default": [
             "Çay demlenme süresi geldi! 🫖 ",
-            "Abi çay molası zamanı! 🫖",
+            "Çay molası zamanı! 🫖",
             "Çayını al, kodu bırak! ✨",
             "Bi çay içsek ne olur ki? 😄",
-            "Çay keyfi için kod durur! 🍃"
+            "Çay keyfi için kod durur! 🍃",
+            "Çay keyfi zamanı! 🫖",
+            "Bi mola versek nasıl olur? ☕",
+            "Gözlerini dinlendir, çay iç! ✨",
+            "Kalk ve çay demle hemen!"
           ],
           "description": "Çay molası mesajları"
         }
