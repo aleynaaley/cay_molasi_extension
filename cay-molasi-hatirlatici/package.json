@@ -1,0 +1,76 @@
+{
+  "name": "cay-molasi-hatirlatici",
+  "displayName": "Çay Molası Hatırlatıcısı",
+  "description": "Türk geliştirici kültürüne özel çay molası hatırlatıcısı",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cayMolasi.baslat",
+        "title": "Çay Molası Başlat",
+        "icon": "🫖" 
+      },
+      {
+        "command": "cayMolasi.durdur",
+        "title": "Çay Molası Durdur"
+      },
+      {
+        "command": "cayMolasi.ayarlar",
+        "title": "Çay Molası Ayarları"
+      }
+    ],
+    "configuration": {
+      "title": "Çay Molası",
+      "properties": {
+        "cayMolasi.sure": {
+          "type": "number",
+          "default": 25,
+          "description": "Çay molası hatırlatma süresi (dakika)",
+          "minimum": 5,
+          "maximum": 120
+        },
+        "cayMolasi.mesajlar": {
+          "type": "array",
+          "default": [
+            "Çay demlenme süresi geldi! 🫖 ",
+            "Abi çay molası zamanı! 🫖",
+            "Çayını al, kodu bırak! ✨",
+            "Bi çay içsek ne olur ki? 😄",
+            "Çay keyfi için kod durur! 🍃"
+          ],
+          "description": "Çay molası mesajları"
+        }
+      }
+    }
+  },
+
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode":  "^1.74.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "typescript": "^5.9.2",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
