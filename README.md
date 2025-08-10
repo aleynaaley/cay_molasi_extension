@@ -2,7 +2,7 @@
 
 **Türk geliştirici kültürüne özel VS Code extension'ı!**
 
-Uzun kodlama seansları sırasında çay molası vermeyi unutuyorsun? Bu extension tam sana göre! Belirli aralıklarla sevimli Türkçe mesajlarla çay molası hatırlatır ve sağlıklı kodlama alışkanlıkları geliştirmene yardımcı olur.Türk kültürü ve benim önemli bir parçası olan çaya gereken değerin bir gün verilmesi dileğiyle :)
+Uzun kodlama seansları sırasında çay molası vermeyi unutuyor musun? Bu extension tam sana göre! Belirli aralıklarla sevimli Türkçe mesajlarla çay molası hatırlatır ve sağlıklı kodlama alışkanlıkları geliştirmene yardımcı olur.Türk kültürü ayrıca benim için büyük bir önemi olan çaya gereken değerin bir gün verilmesi dileğiyle :)
 
 ## ✨ Özellikler
 
@@ -60,6 +60,16 @@ Extension şu eğlenceli mesajlarla hatırlatır:
 - "Çay demlenme süresi geldi! ☕"
 - "Çayını al, kodu bırak! ✨"
 - "Bi çay içsek ne olur ki? 😄"
+
+## Örnek Ayar
+json{
+  "cayMolasi.sure": 30,
+  "cayMolasi.mesajlar": [
+    "Çay keyfi zamanı! 🫖",
+    "Bi mola versek nasıl olur? ☕",
+    "Gözlerini dinlendir, çay iç! ✨"
+  ]
+}
 
 ## 🔧 Geliştirme
 
