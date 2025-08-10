@@ -52,7 +52,7 @@ function cayMolasiBaslat() {
         cayMolasiHatirlatici();
     }, sure * 60 * 1000); // dakikayı milisaniyeye çevir
     
-    vscode.window.showInformationMessage(`Çay molası ${sure} dakika sonra hatırlatılacak! ☕`);
+    vscode.window.showInformationMessage(`Çay molası ${sure} dakika sonra hatırlatılacak! 🫖`);
 }
 
 function cayMolasiDurdur() {
@@ -76,12 +76,12 @@ function cayMolasiHatirlatici() {
     const rastgeleMesaj = mesajlar[Math.floor(Math.random() * mesajlar.length)];
     
     // Notification göster
-    const secenekler = ['Çay İçiyorum! 🫖', 'Biraz Daha Kodlayayım', '5 Dakika Sonra'];
+    const secenekler = ['Çay İçiyorum! 🫖', 'Biraz Daha Kodlayayım 🖥️', '5 Dakika Sonra'];
     
     vscode.window.showInformationMessage(rastgeleMesaj, ...secenekler).then(selection => {
         if (selection === 'Çay İçiyorum! 🫖') {
             // 5 dakika çay molası
-            vscode.window.showInformationMessage('Afiyet olsun! 5 dakika sonra tekrar başlayalım! ☕');
+            vscode.window.showInformationMessage('Afiyet olsun! 5 dakika sonra tekrar başlayalım! 🫖');
             setTimeout(() => {
                 vscode.window.showInformationMessage('Çay molası bitti! Kodlamaya dönelim! 💻');
                 cayMolasiBaslat(); // Yeniden başlat
@@ -101,7 +101,7 @@ function cayMolasiHatirlatici() {
 function statusBarGuncelle() {
     if (!cayMolasiAktif) {
         statusBarItem.text = "🫖 Çay Molası: Kapalı";
-        statusBarItem.tooltip = "Çay molası başlatmak için tıkla";
+        statusBarItem.tooltip = "Çay molası başlatmak için tıkla ";
         statusBarItem.show();
         return;
     }
@@ -119,7 +119,7 @@ function statusBarGuncelle() {
         statusBarItem.tooltip = `${kalanSure} dakika sonra çay molası hatırlatılacak`;
     } else {
         statusBarItem.text = "🫖 Çay zamanı!";
-        statusBarItem.tooltip = "Çay molası zamanı geldi!";
+        statusBarItem.tooltip = "🎉 Çay molası zamanı geldi!";
     }
     
     statusBarItem.show();

@@ -18,7 +18,10 @@
       {
         "command": "cayMolasi.baslat",
         "title": "Çay Molası Başlat",
-        "icon": "🫖" 
+        "icon": {
+        "light": "media/türk_kahvesi.png",
+        "dark": "media/türk_kahvesi.png"
+      }
       },
       {
         "command": "cayMolasi.durdur",
@@ -42,15 +45,35 @@
         "cayMolasi.mesajlar": {
           "type": "array",
           "default": [
-            "Çay demlenme süresi geldi! 🫖 ",
-            "Çay molası zamanı! 🫖",
+            "Çay demlenme süresi geldi! 🎊 ",
+            "Çay molası zamanı! 🍵",
             "Çayını al, kodu bırak! ✨",
             "Bi çay içsek ne olur ki? 😄",
             "Çay keyfi için kod durur! 🍃",
-            "Çay keyfi zamanı! 🫖",
-            "Bi mola versek nasıl olur? ☕",
+            "Çay keyfi zamanı! 🍵",
+            "Bi mola versek nasıl olur? 🍵",
             "Gözlerini dinlendir, çay iç! ✨",
-            "Kalk ve çay demle hemen!"
+            "Kalk ve çay demle hemen! 🧁 ",
+            "Çalış çalış nereye kadar artık çay vakti!🍵",
+            "Kodlama güzel ama çay daha güzel! 🍪",
+            "Beynini tazele, çayı demle! 🧠",
+            "Kod satırlarını bırak, çay kaşıklarını al! 🥄",
+            "Kafein ruhun yakıtıdır! ⛽",
+            "Bunu bitirince çay seni bekliyor! 🍵",
+            "Çay bahane, mola şahane! 😎",
+            "Kodda hata yok, ama çay eksik! 🛠️",
+            "Oturmak bedene, çay ruha iyi gelir. ✨",
+            "Hadi biraz dedikodu ve çay molası zamanı! 🗣️",
+            "Kodu derlemeden önce ruhunu demlendir! 🍰",
+            "Kodun demlendi, şimdi çayın demlensin! 💻",
+            "CTRL + S, sonra CTRL + Çay! ☕",
+            "Kod hata vermese de beynin mola ister! 🧠",
+            "Çay iç, stack overflow’un dolsun! 😂",
+            "Kodun commit'i, çayın limiti yok! ✨",
+            "Bir çay almaz mıyız beyfendi/hanımefendi? ",
+            "Çay bardakta, keyif damakta! 😌",
+            "Kod donduysa çay seni çözer! 🔥",
+            "Hata ayıklamaya mola ver, çay içmeye başla! 🔍"
           ],
           "description": "Çay molası mesajları"
         }
