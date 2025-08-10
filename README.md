@@ -62,6 +62,7 @@ Extension şu eğlenceli mesajlarla hatırlatır:
 - "Bi çay içsek ne olur ki? 😄"
 
 ## Örnek Ayar
+```
 json{
   "cayMolasi.sure": 30,
   "cayMolasi.mesajlar": [
@@ -70,6 +71,7 @@ json{
     "Gözlerini dinlendir, çay iç! ✨"
   ]
 }
+```
 
 ## 🔧 Geliştirme
 
