@@ -63,14 +63,14 @@ Extension şu eğlenceli mesajlarla hatırlatır:
 
 ## Örnek Ayar
 ```
-json{
+
   "cayMolasi.sure": 30,
   "cayMolasi.mesajlar": [
     "Çay keyfi zamanı! 🫖",
     "Bi mola versek nasıl olur? ☕",
     "Gözlerini dinlendir, çay iç! ✨"
   ]
-}
+
 ```
 
 ## 🔧 Geliştirme
